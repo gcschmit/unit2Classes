@@ -38,26 +38,29 @@ public class Target
     public void draw(Graphics2D g2)
     {
         //the number of the ring is the radius, the smaller nestled in the larger
-        Ellipse2D.Double ring1 = new Ellipse2D.Double(xLeft + 5, yTop + 5, 1, 1);
-        Ellipse2D.Double ring2 = new Ellipse2D.Double(xLeft + 5, yTop + 5, 2, 2);
-        Ellipse2D.Double ring3 = new Ellipse2D.Double(xLeft + 5, yTop + 5, 3, 3);
-        Ellipse2D.Double ring4 = new Ellipse2D.Double(xLeft + 5, yTop + 5, 4, 4);
-        Ellipse2D.Double ring5 = new Ellipse2D.Double(xLeft + 5, yTop + 5, 5, 5);
-        g2.setColor(Color.BLACK);
-        g2.draw(ring1);
-        g2.fill(ring1);
-        g2.setColor(Color.WHITE);
-        g2.draw(ring2);
-        g2.fill(ring2);
-        g2.setColor(Color.BLACK);
-        g2.draw(ring3);
-        g2.fill(ring3);
+        Ellipse2D.Double ring1 = new Ellipse2D.Double(xLeft+40, yTop +40, 20, 20);
+        Ellipse2D.Double ring2 = new Ellipse2D.Double(xLeft + 30, yTop +30, 40, 40);
+        Ellipse2D.Double ring3 = new Ellipse2D.Double(xLeft+20, yTop +20, 60, 60);
+        Ellipse2D.Double ring4 = new Ellipse2D.Double(xLeft+10, yTop+10 , 80, 80);
+        Ellipse2D.Double ring5 = new Ellipse2D.Double(xLeft, yTop , 100, 100);
+        g2.setColor(Color.RED);
+        g2.draw(ring5);
+        g2.fill(ring5);
         g2.setColor(Color.WHITE);
         g2.draw(ring4);
         g2.fill(ring4);
-        g2.setColor(Color.BLACK);
-        g2.draw(ring5);
-        g2.fill(ring5);
+        g2.setColor(Color.RED);
+        g2.draw(ring3);
+        g2.fill(ring3);
+        g2.setColor(Color.WHITE);
+        g2.draw(ring2);
+        g2.fill(ring2);
+        g2.setColor(Color.RED);
+        g2.draw(ring1);
+        g2.fill(ring1);
+        
+        
+        
     }
 
 }
