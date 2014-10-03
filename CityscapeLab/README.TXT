@@ -27,3 +27,5 @@ Submission
 
 * Submit a pull request in GitHub and submit a link to the request with this assignment.
  
+* 
+*component.repaint();
