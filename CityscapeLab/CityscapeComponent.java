@@ -26,12 +26,12 @@ public class CityscapeComponent extends JComponent
     {
         Graphics2D g2 = (Graphics2D) g;
         
-        Building building1 = new Building(0, getHeight(), getWidth);
-        Building building2 = new Building(1, getHeight(), getWidth);
-        Building building3 = new Building(2, getHeight(), getWidth);
-        Building building4 = new Building(7, getHeigth(), getWidth);
-        Building building5 = new Building(8, getHeight(), getWidth);
-        Building building6 = new Building(9, getHeight(), getWidth);
+        Building building1 = new Building(0, getHeight(), getWidth() );
+        Building building2 = new Building(1, getHeight(), getWidth() );
+        Building building3 = new Building(2, getHeight(), getWidth() );
+        Building building4 = new Building(7, getHeight(), getWidth() );
+        Building building5 = new Building(8, getHeight(), getWidth() );
+        Building building6 = new Building(9, getHeight(), getWidth() );
         
         building1.draw(g2);
         building2.draw(g2);
