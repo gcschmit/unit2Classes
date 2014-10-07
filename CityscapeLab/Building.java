@@ -28,8 +28,8 @@ public class Building
     {
         // initialise instance variables
         Random generator = new Random();
-        blockHeight = generator.nextInt(11)+1;
-        height = blockHeight*(yMax/20);
+        blockHeight = generator.nextInt(7)+2;
+        height = blockHeight*(yMax/12);
         width = xMax/ 10;
         position = startPosition*xMax/10;
         floor = yMax;
@@ -41,10 +41,9 @@ public class Building
      *    that describes the operation of the method
      *
      * @pre        Assumes that the 
-     * @post    postconditions for the method
+     * @post    A building that fits in the set constraints
      *            (what the method guarantees upon completion)
-     * @param    y    description of parameter y
-     * @return    description of the return value
+     * @param    g2     the graphics object that will draw the building
      */
     public void draw(Graphics2D g2)
     {
@@ -64,12 +63,19 @@ public class Building
             g2.setColor(darkGray);
         }
         g2.fill(base);
-        g2.setColor(Color.YELLOW);
         for (int i = 1; i<blockHeight; i++)
         {
-            Rectangle.Double window = new Rectangle.Double(position+(width/4),floor-height,width/4
-            ,height/4);
-            g2.fill(window);
+            pickColor = generator.nextInt(2);
+            if (pickColor == 0)
+                {
+                    g2.setColor(Color.YELLOW);
+                }
+                else
+                {
+                    g2.setColor(Color.BLACK);
+                }
+            Rectangle.Double leftWindow = new Rectangle.Double(position+(3*width/8),floor-height+i*height/blockHeight,width/4,height/blockHeight/2);
+            g2.fill(leftWindow);
         }
         
     }
