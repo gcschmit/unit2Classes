@@ -1,37 +1,67 @@
 import java.awt.Graphics;
 import java.awt.Graphics2D;
 import javax.swing.JComponent;
+import java.util.Random;
 
 /**
  * Class that creates instances of the classes that comprise the cityscape and delegates drawing the
- *  cityscape to these object.
+ * cityscape to these object.
  * 
- * @author @gcschmit
- * @version 18 July 2014
+ * @author Yi Qiao
+ * @version 3 October 2014
  */
 public class CityscapeComponent extends JComponent
 {
-    /**
-     * An example of a method - replace this comment with your own
-     *    that describes the operation of the method
-     *
-     * @pre        preconditions for the method
-     *            (what the method assumes about the method's parameters and class's state)
-     * @post    postconditions for the method
-     *            (what the method guarantees upon completion)
-     * @param    y    description of parameter y
-     * @return    description of the return value
-     */
     public void paintComponent(Graphics g)
     {
         Graphics2D g2 = (Graphics2D) g;
         
-        // writing the code for my lab...
+        int frameWidth = getWidth();
+        int frameHeight = getHeight();
+        Sky sky = new Sky(frameWidth, frameHeight);
+        sky.draw(g2);
         
-        // create instances of classes and invoke the draw method on each
-        // ...
+        // Y-coordinate of top left corner of grass is 3/5 down the frame
+        int GrassYTop = 3*(getHeight()/5);
+        Grass grass = new Grass(GrassYTop, frameWidth, frameHeight);
+        grass.draw(g2);
         
+        // Y-coordinate of top left corner of road is 7/10 of the way down the frame
+        int roadYTop = 7*(getHeight()/10);
+        // Road height is 1/5 height of frame
+        int roadHeight = 1*(getHeight()/5);
+        // Y-coordinate of top left corner of perforated line is 4/5 of the way down the frame
+        int lineYTop = 4*(getHeight()/5);
+        // X-coordinate of top left corner of left-most line segment is 20 pixels away from right edge of frame
+        int lineXRight = getWidth() - 20;
+        Road road = new Road(roadYTop, frameWidth, roadHeight, lineYTop, lineXRight);
+        road.draw(g2);
         
+        // Moon width is 1/9 width of frame
+        int moonWidth = 1*(getWidth()/9);
+        // Moon height is equal to moon width so moon will be circle
+        int moonHeight = moonWidth;
+        Moon moon = new Moon(moonWidth, moonHeight);
+        moon.draw(g2);
+        
+        Random num = new Random();
+        int count = 0;
+        while (count < (frameWidth/2))
+        // Number of stars equal to half of frame width (so will increase as size of frame increases)
+        {
+            // X-coordinate of star random number between 0 and frame width - 1
+            int starX = num.nextInt(frameWidth);
+            // Y-coordinate of star random number between 0 and top of grass - 1
+            int starY = num.nextInt(GrassYTop);
+            
+            Star star = new Star(starX, starY);
+            star.draw(g2);
+            
+            count++;
+        }
+        
+        Skyscraper skyscraper = new Skyscraper(frameWidth, GrassYTop);
+        skyscraper.draw(g2);
     }
-
 }
+
