@@ -10,6 +10,7 @@ public class AvgOfThree
       System.out.print ("Enter the first number: ");
       a = s.nextDouble();
 
+
       System.out.print ("Enter the second number: ");
       b = s.nextDouble();
 
