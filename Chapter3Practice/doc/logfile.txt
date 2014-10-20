@@ -1,0 +1,47 @@
+Class documentation
+<---- javadoc command: ---->
+C:\PROGRA~1\Java\JDK17~1.0_6\bin\javadoc.exe
+-author
+-version
+-nodeprecated
+-package
+-noindex
+-notree
+-nohelp
+-nonavbar
+-source
+1.7
+-classpath
+C:\Program Files\BlueJ\lib\bluejcore.jar;C:\Program Files\BlueJ\lib\junit-4.8.2.jar;\\NNHSSRV2.hs.sd203.org\aamleshi$\AP Comp Sci\unit2Classes\Chapter3Practice
+-d
+\\NNHSSRV2.hs.sd203.org\aamleshi$\AP Comp Sci\unit2Classes\Chapter3Practice\doc
+-encoding
+UTF-8
+-charset
+UTF-8
+-docletpath
+C:\Program Files\BlueJ\lib\bjdoclet.jar
+-doclet
+bluej.doclet.doclets.formats.html.HtmlDoclet
+\\NNHSSRV2.hs.sd203.org\aamleshi$\AP Comp Sci\unit2Classes\Chapter3Practice\Car.java
+<---- end of javadoc command ---->
+Loading source file \\NNHSSRV2.hs.sd203.org\aamleshi$\AP Comp Sci\unit2Classes\Chapter3Practice\Car.java...
+Constructing Javadoc information...
+Standard Doclet version 1.7.0_60
+Building tree for all the packages and classes...
+Generating \\NNHSSRV2.hs.sd203.org\aamleshi$\AP Comp Sci\unit2Classes\Chapter3Practice\doc\Car.html...
+\\NNHSSRV2.hs.sd203.org\aamleshi$\AP Comp Sci\unit2Classes\Chapter3Practice\Car.java:11: warning - @Arresh is an unknown tag.
+\\NNHSSRV2.hs.sd203.org\aamleshi$\AP Comp Sci\unit2Classes\Chapter3Practice\Car.java:31: warning - @pre is an unknown tag.
+\\NNHSSRV2.hs.sd203.org\aamleshi$\AP Comp Sci\unit2Classes\Chapter3Practice\Car.java:46: warning - @pre is an unknown tag.
+\\NNHSSRV2.hs.sd203.org\aamleshi$\AP Comp Sci\unit2Classes\Chapter3Practice\Car.java:46: warning - @post is an unknown tag.
+\\NNHSSRV2.hs.sd203.org\aamleshi$\AP Comp Sci\unit2Classes\Chapter3Practice\Car.java:56: warning - @return's is an unknown tag.
+Generating \\NNHSSRV2.hs.sd203.org\aamleshi$\AP Comp Sci\unit2Classes\Chapter3Practice\doc\package-frame.html...
+Generating \\NNHSSRV2.hs.sd203.org\aamleshi$\AP Comp Sci\unit2Classes\Chapter3Practice\doc\package-summary.html...
+Generating \\NNHSSRV2.hs.sd203.org\aamleshi$\AP Comp Sci\unit2Classes\Chapter3Practice\doc\constant-values.html...
+Building index for all the packages and classes...
+Building index for all classes...
+Generating \\NNHSSRV2.hs.sd203.org\aamleshi$\AP Comp Sci\unit2Classes\Chapter3Practice\doc\allclasses-frame.html...
+Generating \\NNHSSRV2.hs.sd203.org\aamleshi$\AP Comp Sci\unit2Classes\Chapter3Practice\doc\allclasses-noframe.html...
+Generating \\NNHSSRV2.hs.sd203.org\aamleshi$\AP Comp Sci\unit2Classes\Chapter3Practice\doc\index.html...
+Generating \\NNHSSRV2.hs.sd203.org\aamleshi$\AP Comp Sci\unit2Classes\Chapter3Practice\doc\stylesheet.css...
+5 warnings

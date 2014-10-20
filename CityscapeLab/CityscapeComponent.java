@@ -23,15 +23,35 @@ public class CityscapeComponent extends JComponent
      * @return    description of the return value
      */
     public void paintComponent(Graphics g)
+    //throws InterruptedException
     {
+        //throws InterruptedException
         Graphics2D g2 = (Graphics2D) g;
         
-        // writing the code for my lab...
+        Background background1 = new Background(getHeight(), getWidth());
         
-        // create instances of classes and invoke the draw method on each
-        // ...
+        Building building1 = new Building(0, getHeight(), getWidth() );
+        Building building2 = new Building(1, getHeight(), getWidth() );
+        Building building3 = new Building(2, getHeight(), getWidth() );
+        Building building4 = new Building(7, getHeight(), getWidth() );
+        Building building5 = new Building(8, getHeight(), getWidth() );
+        Building building6 = new Building(9, getHeight(), getWidth() );
         
+        //AndrewT andrew = new AndrewT();
+
+        Sun blackHoleSun = new Sun(0, getWidth(), getHeight());
+        background1.draw(g2);
+        building1.draw(g2);
+        building2.draw(g2);
+        building3.draw(g2);
+        building4.draw(g2);
+        building5.draw(g2);
+        building6.draw(g2);
+        blackHoleSun.draw(g2);
+        //andrew.draw(g2);
+
         
     }
+        
 
 }
