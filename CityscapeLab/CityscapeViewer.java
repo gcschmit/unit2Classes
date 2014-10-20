@@ -12,13 +12,13 @@ public class CityscapeViewer
      * main method for the program which creates and configures the frame for the program
      *
      */
-    public static void main(String[] args)
+    public static void main(String args[])
     {
         // create and configure the frame (window) for the program
         JFrame frame = new JFrame();
         
         frame.setSize(1000 /* x */, 600 /* y */);
-        frame.setTitle("Cityscape");
+        frame.setTitle("Andrew's zone");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         
         // a frame contains a single component; create the Cityscape component and add it to the frame

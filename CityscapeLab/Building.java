@@ -40,7 +40,6 @@ public class Building
      * An example of a method - replace this comment with your own
      *    that describes the operation of the method
      *
-     * @pre        Assumes that the 
      * @post    A building that fits in the set constraints
      *            (what the method guarantees upon completion)
      * @param    g2     the graphics object that will draw the building

@@ -66,7 +66,7 @@ public class PenroseBuilding
         double x = topVertex.getX() - (innerBottemSide.getX1()- innerBottemSide.getX1()/4);
         double y = ((topVertex.getY()-rightVertex.getY())/(topVertex.getX()-rightVertex.getX()))*x + topVertex.getY() - 
         ((topVertex.getY()-rightVertex.getY())/(topVertex.getX()-rightVertex.getX()))*topVertex.getX();
-        Point2D.Double middleTopVertex = new Point2D.Double(x,y);
+        Point2D.Double middleTopVertex = new Point2D.Double(x/2,y/2);
         Line2D.Double topVertexOutcrop = new Line2D.Double(middleTopVertex, topVertex);
         g2.draw(topVertexOutcrop);
     }
